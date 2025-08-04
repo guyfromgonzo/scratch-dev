@@ -5,7 +5,7 @@
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/gradle:1": {
+    "ghcr.io/devcontainers-extra/features/gradle-sdkman:2": {
       "version": "8.9"
     }
   },
@@ -23,7 +23,6 @@
         "streetsidesoftware.code-spell-checker"
       ],
       "settings": {
-        "java.home": "/usr/local/sdkman/candidates/java/current",
         "java.configuration.runtimes": [
           {
             "name": "JavaSE-21",
@@ -45,7 +44,7 @@
 
   "remoteUser": "vscode",
 
-  "mounts": [
+  "mount": [
     "source=${localWorkspaceFolder}/.gradle,target=/home/vscode/.gradle,type=bind,consistency=cached"
   ]
 }
