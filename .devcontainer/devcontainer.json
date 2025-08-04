@@ -1,0 +1,52 @@
+{
+  "name": "Java 21 Development",
+  "image": "mcr.microsoft.com/devcontainers/java:21-jdk-bookworm",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/maven:1": {
+      "version": "latest"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-gradle",
+        "vscjava.vscode-maven",
+        "redhat.java",
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-test",
+        "vscjava.vscode-java-dependency",
+        "ms-vscode.vscode-json",
+        "streetsidesoftware.code-spell-checker"
+      ],
+      "settings": {
+        "java.home": "/usr/local/sdkman/candidates/java/current",
+        "java.configuration.runtimes": [
+          {
+            "name": "JavaSE-21",
+            "path": "/usr/local/sdkman/candidates/java/current"
+          }
+        ],
+        "java.compile.nullAnalysis.mode": "automatic",
+        "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+        "java.format.settings.profile": "GoogleStyle",
+        "maven.executable.path": "/usr/local/sdkman/candidates/maven/current/bin/mvn",
+        "maven.terminal.useJavaHome": true
+      }
+    }
+  },
+
+  "forwardPorts": [8080, 8081, 9090],
+
+  "postCreateCommand": "java --version && mvn --version && echo 'Maven and Java setup complete'",
+
+  "remoteUser": "vscode",
+
+  "mounts": [
+    "source=${localWorkspaceFolder}/.m2,target=/home/vscode/.m2,type=bind,consistency=cached"
+  ]
+}
