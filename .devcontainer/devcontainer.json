@@ -4,10 +4,7 @@
   
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/maven:1": {
-      "version": "latest"
-    }
+    "ghcr.io/devcontainers/features/github-cli:1": {}
   },
 
   "customizations": {
@@ -33,9 +30,7 @@
         ],
         "java.compile.nullAnalysis.mode": "automatic",
         "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
-        "java.format.settings.profile": "GoogleStyle",
-        "maven.executable.path": "/usr/local/sdkman/candidates/maven/current/bin/mvn",
-        "maven.terminal.useJavaHome": true
+        "java.format.settings.profile": "GoogleStyle"
       }
     }
   },
