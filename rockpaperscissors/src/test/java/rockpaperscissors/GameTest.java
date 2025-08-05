@@ -1,4 +1,4 @@
-package test.java.rockpaperscissors;
+package rockpaperscissors;
 
 import org.junit.jupiter.api.Test;
 import java.io.ByteArrayInputStream;
