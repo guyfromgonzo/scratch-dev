@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rockpaperscissors.GameTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-08-05T21:55:44" hostname="f2864f03d39e" time="0.004">
+  <properties/>
+  <testcase name="testTie()" classname="rockpaperscissors.GameTest" time="0.003"/>
+  <testcase name="testInvalidInput()" classname="rockpaperscissors.GameTest" time="0.0"/>
+  <testcase name="testNotATie()" classname="rockpaperscissors.GameTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
